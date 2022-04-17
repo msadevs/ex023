@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+
+        }
+        thead > tr > th {
+        position: sticky;
+        top: 1px;
+        background-color: gray;
+        }
+
+        tbody >tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        div#container{
+            overflow-x:auto ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus atque, voluptas accusamus explicabo alias laborum illo earum. Voluptate sequi, placeat consequuntur debitis eaque odit, dolorem, consequatur tempore id suscipit exercitationem!</p>
+    <div id="container">
+        <table>
+            <COLgroup>
+                <col>
+                <col>
+                <col>
+            </COLgroup>
+            <thead>
+                <tr>
+                    <th>Estado xxxxxxxxxxxxxxxxxxxx11111111111111111111111111111xxxxx</th>
+                    <th>População1111111111111111111111111111111111111111111111111111</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Pauloxxxxxxxxxxx</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>Minas Geraisxxxxxxxxxxxxxxxxxxxxxx</td>
+                    <td>21.000.000</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>17.000.000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>População total</td>
+                    <td>45.000.000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+</body>
+</html>
